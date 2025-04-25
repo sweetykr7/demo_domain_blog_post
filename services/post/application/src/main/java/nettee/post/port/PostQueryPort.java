@@ -11,7 +11,7 @@ import java.util.Set;
 
 public interface PostQueryPort {
     Optional<Post> findById(Long id);
-    List<Post> findAllAfter(Instant lastCreatedAt, Long lastId, int size);
-    List<Post> findByStatusesAfter(Set<PostStatus> statuses, Instant lastCreatedAt, Long lastId, int size);
+    List<Post> findAllAfter(Instant lastCreatedAt, int size);
+    List<Post> findByStatusesAfter(Set<PostStatus> statuses, Instant lastCreatedAt, int size);
 
 }
