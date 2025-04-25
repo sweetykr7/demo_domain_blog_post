@@ -1,0 +1,4 @@
+spring:
+  config:
+    import:
+#      - properties/db/post.database.yml
